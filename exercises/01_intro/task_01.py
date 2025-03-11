@@ -12,3 +12,13 @@ Ruby is a high-level, interpreted, general-purpose programming language.
 start_data = "Python is a high-level, interpreted, general-purpose programming language."
 print(start_data)
 
+# new_data = start_data.replace("Python", "Ruby")
+# print(new_data)
+
+part = start_data[6:]
+result = "Ruby" + part
+print(result)
+
+# З нюансами роботи lstrip
+# part = start_data.lstrip("Python")
+# print("Ruby" + part)

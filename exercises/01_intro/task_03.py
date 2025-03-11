@@ -3,7 +3,7 @@
 $ python task_03.py
 Python is a high-level, interpreted, general-purpose programming language.
 
-Отримати з рядка start_data такий список (видалені коми та точка і рядок
+Отримати з рядка start_data такий список (видалені коми та крапка і рядок
 поділено на слова):
 ['Python', 'is', 'a', 'high-level', 'interpreted', 'general-purpose', 'programming', 'language']
 
@@ -16,6 +16,12 @@ $ python task_03.py
 
 Обмеження: рядок start_data не можна змінювати вручну, тільки за допомогою Python.
 """
+from pprint import pprint
+
 start_data = "Python is a high-level, interpreted, general-purpose programming language."
 print(start_data)
 
+new_data = start_data.replace(",", "")[:-1]
+pprint(new_data)
+print(new_data.split())
+# print(new_data.split(" "))
