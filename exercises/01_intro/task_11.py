@@ -35,3 +35,10 @@ $ python task_11.py
 colors = ["green", 'red', 'pink', 'yellow', 'white', 'black']
 # ускладнена версія
 # colors = ["Green", 'RED', 'Pink', 'YELLOW', 'white', 'Black']
+
+color = input("Введіть колір: ")
+
+if color.lower() in colors:
+    print("Такий колір є")
+else:
+    print("У списку colors немає такого кольору")
