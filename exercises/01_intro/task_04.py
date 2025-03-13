@@ -9,3 +9,6 @@
 
 words = ["line", "test", "column"]
 new_word = "result"
+print(words)
+words.append(new_word)
+print(words)
