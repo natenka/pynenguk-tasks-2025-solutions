@@ -32,9 +32,13 @@ $ python task_11.py
 
 При цьому не можна змінювати список colors.
 """
+# Version 1
 colors = ["green", 'red', 'pink', 'yellow', 'white', 'black']
-# ускладнена версія
-# colors = ["Green", 'RED', 'Pink', 'YELLOW', 'white', 'Black']
+ускладнена версія
+colors_raw = ["Green", 'RED', 'Pink', 'YELLOW', 'white', 'Black']
+colors = []
+for col in colors_raw:
+    colors.append(col.lower())
 
 color = input("Введіть колір: ")
 
@@ -42,3 +46,29 @@ if color.lower() in colors:
     print("Такий колір є")
 else:
     print("У списку colors немає такого кольору")
+
+# Version 2
+# colors = ["Green", 'RED', 'Pink', 'YELLOW', 'white', 'Black']
+# user_color = input("Введіть колір: ")
+#
+# message = "У списку colors немає такого кольору"
+# for color in colors:
+#     if color.lower() == user_color.lower():
+#         message = "Такий колір є"
+#
+# print(message)
+
+# Version 3
+# colors = ["Green", 'RED', 'Pink', 'YELLOW', 'white', 'Black']
+# user_color = input("Введіть колір: ")
+#
+# found_color = False
+# for color in colors:
+#     if color.lower() == user_color.lower():
+#         found_color = True
+#
+# # if found_color == True:
+# if found_color:
+#     print("Такий колір є")
+# else:
+#     print("У списку colors немає такого кольору")
